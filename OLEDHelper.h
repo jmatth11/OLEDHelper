@@ -45,7 +45,7 @@ class OLEDHelper {
      * @param y The Y position.
      */
     void write(String msg, int16_t x, int16_t y);
-    
+
     /**
      * Get the X position that would center the text on the x plane.
      * @param s The string to center.
@@ -79,7 +79,7 @@ class OLEDHelper {
      * Get the internal display object.
      * @returns The Adafruit_SSD1306 object.
      */
-    const Adafruit_SSD1306 getDisplay();
+    Adafruit_SSD1306& getDisplay();
 };
 
 #endif

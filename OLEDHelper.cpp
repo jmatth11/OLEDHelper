@@ -89,6 +89,6 @@ int16_t OLEDHelper::getBottomAlignedY(String s, int16_t offset) {
   return new_y + offset;
 }
 
-const Adafruit_SSD1306 OLEDHelper::getDisplay() {
+Adafruit_SSD1306& OLEDHelper::getDisplay() {
   return display;
 }
