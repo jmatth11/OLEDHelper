@@ -1,8 +1,8 @@
 #include "OLEDHelper.h"
 
 OLEDHelper::OLEDHelper(uint8_t height, uint8_t width) {
-  height = height;
-  width = width;
+  this->height = height;
+  this->width = width;
   display = Adafruit_SSD1306(width, height, &Wire, -1);
   if (height == 64) {
     i2cAddr = 0x3D;
